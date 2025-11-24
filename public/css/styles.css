@@ -1,4 +1,61 @@
 html {
-    background-color: #454545;
+    display: flex;
+    background-color: #000000;
     color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.73);
+    border-radius: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 15px;
+    color: white;
+    border-radius: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(115, 115, 115, 0.55);
+    padding: 40px;
+    border-radius: 10px;
+    min-width: 800px;
+    max-width: 1000px;
+}
+
+body img {
+    width: 500px;
+    margin: 20px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+h1 {
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.73);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    justify-self: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.73);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer p {
+    margin-inline: 40px;
 }

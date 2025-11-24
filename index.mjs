@@ -62,6 +62,14 @@ app.get('/neptune', (req, res) => {
     res.render('neptune', { planetNeptune });
 });
 
+app.get('/nasa', async(req, res) => {
+    let url = 'https://api.nasa.gov/planetary/apod?api_key=9mUzIkhlZCZaOoMfspg7jMmwZCZ4LiRHtkgkambD&date=2025-11-23';
+    let response = await fetch(url);
+    let data = await response.json();
+    console.log(data);
+    res.render('nasa', {'nasaPOD':data.url});
+});
+
 app.listen(3000, () => {
     console.log('server started')
 });
